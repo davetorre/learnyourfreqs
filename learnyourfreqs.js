@@ -29,7 +29,6 @@ initButtons = function () {
         osc.start(context.currentTime);
         osc.stop(context.currentTime + 0.5);
     });
-        
 
     $("#nextButton").click(function () {
         min = $("#freqSlider").val()[0];
@@ -75,28 +74,28 @@ $("document").ready(function() {
     } catch (e) {
         alert('No web audio support in this browser');
     }
-    
+
     initButtons();
-	
+
     // Run noUiSlider
-	$("#freqSlider").noUiSlider({
-		range: [20,20000],
-		start: [20,20000],
-		connect: true,
-		serialization: {
-		    resolution: 1,
-		    to: [
+    $("#freqSlider").noUiSlider({
+        range: [20,20000],
+        start: [20,20000],
+        connect: true,
+        serialization: {
+            resolution: 1,
+            to: [
                     [ $('#min'), writeMin ],
                     [ $('#max'), writeMax ]
             ]
         }
-	});
-	
+    });
+
     // Running noUiSlider calls writeMin and writeMax immediately.
     // Both writeMin and writeMax call setFreq
     // I'd like to start with 440Hz
     currentFreq = 440;
-	
+
 });
 
 }());
