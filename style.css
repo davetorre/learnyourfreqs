@@ -1,0 +1,56 @@
+body {
+    background-color: #FAFFC7;
+    text-align: center;
+    font-family: "Helvetica", sans-serif;
+    font-size: medium;
+    margin: 5em auto;
+}
+
+h1 { 
+    font-size: 3em;
+    line-height: 1em;
+    margin: auto;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+input {
+    width: 4em;
+    font-size: 1em;
+}
+
+#btns {
+    margin: 1.7em 0;
+}
+
+.btn-rect {
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 4.8em;
+    height: 2.5em;
+    margin: 0.2em;
+}
+
+#freqSlider {
+    position: relative;
+    width: 24em;
+    margin: 2em auto 0;
+}
+
+#outer {
+    position: relative;
+    width: 24em;
+    margin: 0.5em auto;
+}
+
+#inner1 {
+    position: absolute;
+    left: 2em;
+}
+
+#inner2 {
+    position: absolute;
+    right: 2em;
+}
