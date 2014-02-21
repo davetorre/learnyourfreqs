@@ -67,12 +67,13 @@ writeMax = function (freq) {
 
 $("document").ready(function() {
     try {
-        context = new webkitAudioContext();
-        gainNode = context.createGainNode();
+        context = new AudioContext();
+        gainNode = context.createGain();
         gainNode.gain.value = 0.1;
         gainNode.connect(context.destination);
     } catch (e) {
-        alert('No web audio support in this browser');
+        alert('No web audio support in this browser :(');
+        return;
     }
 
     initButtons();
