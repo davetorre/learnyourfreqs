@@ -7,24 +7,27 @@
 	<link href="jquery.nouislider.min.css" rel="stylesheet">
 </head>
 <body>
-	<div id="header">
-  	<h1>Learn your freqs!</h1>
-		<p>Practice guessing random frequencies.</p>
-	</div>
-	<div id="btns">
-	  <button id="playButton" class="btn-rect">Play</button> 
-		<button id="nextButton" class="btn-rect">Next</button>
-		<button id="revealButton" class="btn-rect">Reveal</button>
-	</div>
-	<div id="freqSlider"></div>
-	<div id="outer">
-		<div id="inner1">
-			<p>Min: <input id="min"></p>
+	<div class="page">
+		<div id="header">
+	  	<h1>Learn your freqs!</h1>
+			<p>Practice guessing random frequencies.</p>
 		</div>
-		<div id="inner2">
-			<p>Max: <input id="max"></p>
+		<div id="btns">
+		  <button id="playButton" class="btn-rect">Play</button> 
+			<button id="nextButton" class="btn-rect">Next</button>
+			<button id="revealButton" class="btn-rect">Reveal</button>
 		</div>
-	</div>
+		<div id="freqSlider"></div>
+		<div class="num_container">
+			<div class="num one">
+				<p>Min: <input id="min"></p>
+			</div>
+			<div class="num two">
+				<p>Max: <input id="max"></p>
+			</div>
+			<div class="clear-fix"></div>
+		</div>
+	<div>
 	<script src="jquery-1.11.0.min.js"></script>
 	<script src="jquery.nouislider.min.js"></script>
 	<script src="AudioContextMonkeyPatch.js"></script>

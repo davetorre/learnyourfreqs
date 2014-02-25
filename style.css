@@ -1,28 +1,28 @@
-body {
-    background-color: #FAFFC7;
+body { 
+    margin: 0; 
+    padding: 0; 
     text-align: center;
+    color: #000;
     font-family: "Helvetica", sans-serif;
-    font-size: medium;
-    margin: 5em auto;
+    font-size: 16px;
+    background-color: #FAFFC7;
+}
+
+.page {
+    max-width: 400px;
+    margin: 75px auto 0px auto;
+    position: relative;
+    background-color: #FAFFC7;
 }
 
 h1 { 
     font-size: 3em;
-    line-height: 1em;
-    margin: auto;
+    margin: 0; 
 }
 
-p {
+p { 
+    margin: .8em 0 1em 0;
     font-size: 1.1em;
-}
-
-input {
-    width: 4em;
-    font-size: 1em;
-}
-
-#btns {
-    margin: 1.7em 0;
 }
 
 .btn-rect {
@@ -30,27 +30,21 @@ input {
     font-size: 1.5em;
     width: 4.8em;
     height: 2.5em;
-    margin: 0.2em;
+    margin: 0.5em 0.2em;
 }
+
+input {
+    width: 4em;
+    font-size: 1em;
+}
+
+.num_container .num {
+    width: 50%;
+    float: left;
+}
+
+.clear-fix { clear: both; line-height: 1px }
 
 #freqSlider {
-    position: relative;
-    width: 24em;
-    margin: 2em auto 0;
-}
-
-#outer {
-    position: relative;
-    width: 24em;
-    margin: 0.5em auto;
-}
-
-#inner1 {
-    position: absolute;
-    left: 2em;
-}
-
-#inner2 {
-    position: absolute;
-    right: 2em;
+    margin: 1.4em .5em .5em .5em;
 }
